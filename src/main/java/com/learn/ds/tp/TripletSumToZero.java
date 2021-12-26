@@ -16,7 +16,7 @@ public class TripletSumToZero {
 
         for (int i = 0; i < arr.length; i++) {
             if (i > 0 && arr[i] == arr[i -1]) continue;
-            
+
             int left = i + 1;
             int right = arr.length - 1;
             while (left < right) {
