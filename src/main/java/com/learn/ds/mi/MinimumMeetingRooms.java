@@ -24,12 +24,14 @@ public class MinimumMeetingRooms {
     }
 
     public static void main(String[] args) {
+        // [[0,2],[1,3],[2,4],[3,5],[4,6]]
         List<Meeting> input = new ArrayList<Meeting>() {
             {
-                add(new Meeting(4, 5));
-                add(new Meeting(2, 3));
+                add(new Meeting(0, 2));
+                add(new Meeting(1, 3));
                 add(new Meeting(2, 4));
                 add(new Meeting(3, 5));
+                add(new Meeting(4, 6));
             }
         };
         int result = MinimumMeetingRooms.findMinimumMeetingRooms(input);
