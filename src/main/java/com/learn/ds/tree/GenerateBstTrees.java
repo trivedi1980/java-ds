@@ -49,22 +49,4 @@ class TreeNode {
         this.left = left;
         this.right = right;
     }
-
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append('[');
-        print(this, sb);
-        sb.append(']');
-        return sb.toString();
-    }
-
-    private void print(TreeNode treeNode, StringBuilder sb) {
-        sb.append(treeNode == null ? "null," : treeNode.val + ",");
-        if (treeNode != null) {
-            if (treeNode.left == null && treeNode.right == null) return;
-            print(treeNode.left, sb);
-            print(treeNode.right, sb);
-        }
-    }
 }
